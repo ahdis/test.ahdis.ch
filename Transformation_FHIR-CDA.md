@@ -121,8 +121,10 @@ There are different mapping engines to perform the transformation. In the follow
 
 5. For the transformation of **your own example**, adjust the following parameters in step 3:
 
-   * Output as XML instead JSON: change `-output 2-7-Bundle.json` to `-output 2-7-Bundle.xml`
-   * Your own input file: change `input/cda-ch-emed/2-7-MedicationCard.xml` to the path of your file
+   * Output as XML instead JSON:   
+    change `-output 2-7-Bundle.json` to `-output 2-7-Bundle.xml`
+   * Your own input file:   
+    change `input/cda-ch-emed/2-7-MedicationCard.xml` to the path of your file
 
 ## Links for further informations
 
