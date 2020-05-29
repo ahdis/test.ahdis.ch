@@ -1,4 +1,4 @@
-# Transformation CDA to FHIR and back
+# Transformation documents from CDA to FHIR and back
 
 With the maps from the project [cda-fhir-maps](https://github.com/ahdis/cda-fhir-maps) CDA documents can be transformed into FHIR documents and back. This manual describes for which exchange formats the transformation can be used and how it is executed.
 
