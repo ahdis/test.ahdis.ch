@@ -59,8 +59,12 @@ The $transform operation takes input content, applies a structure map transform,
 ### Input
 The POST request has the content to transform  as the resource body.
 
+![POST request](https://github.com/ahdis/test.ahdis.ch/blob/master/images/Transformation-POST.png)
+
 ### File format (xml/json)
 Make sure to set the Content-/Accept-Type to either `application/fhir+json;fhirVersion=4.0` or `application/fhir+json;fhirVersion=4.0` accordingly.
+
+![Headers](https://github.com/ahdis/test.ahdis.ch/blob/master/images/Transformation-Headers.png)
 
 
 
