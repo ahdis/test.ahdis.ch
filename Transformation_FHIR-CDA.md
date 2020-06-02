@@ -57,7 +57,7 @@ The $transform operation takes input content, applies a structure map transform,
 
 
 ### Input
-The POST request has the content to transform  as the resource body.
+The POST request has the content to transform as the resource body.
 
 ![POST request](https://github.com/ahdis/test.ahdis.ch/blob/master/images/Transformation-POST.png)
 
