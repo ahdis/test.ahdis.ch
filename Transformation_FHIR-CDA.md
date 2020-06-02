@@ -66,7 +66,8 @@ Make sure to set the Content-/Accept-Type to either `application/fhir+json;fhirV
 
 ![Headers](https://github.com/ahdis/test.ahdis.ch/blob/master/images/Transformation-Headers.png)
 
-
+## Create your own maps
+To create additional own maps and perform the transformation locally, see README.md of the project [cda-fhir-maps](https://github.com/ahdis/cda-fhir-maps).
 
 ## Links for further informations
 
