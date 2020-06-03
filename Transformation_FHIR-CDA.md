@@ -1,6 +1,6 @@
 # Transformation documents from CDA to FHIR and back as a service
 
-The transformation of documents from CDA to FHIR and back is offered as a micro service. The basis of this service are the maps ([cda-fhir-maps](https://github.com/ahdis/cda-fhir-maps)) describing the mapping between the CDA and FHIR elements and a hapi fhir spring boot server ([matchbox](https://github.com/ahdis/matchbox)) supporting the [$transform operation for StructureMaps](http://www.hl7.org/fhir/structuremap-operation-transform.html).   
+The transformation of documents from CDA to FHIR and back is offered as a micro service. The basis of this service are the maps ([cda-fhir-maps](https://github.com/hl7ch/cda-fhir-maps)) describing the mapping between the CDA and FHIR elements and a hapi fhir spring boot server ([matchbox](https://github.com/ahdis/matchbox)) supporting the [$transform operation for StructureMaps](http://www.hl7.org/fhir/structuremap-operation-transform.html).   
 This manual describes which document types are supported and how the service can be used.
 
 ## Supported document types
@@ -29,31 +29,31 @@ The $transform operation takes input content, applies a structure map transform,
 * CDA to FHIR
 
    * Medication Card document:   
-   https://test.ahdis.ch/r4/StructureMap/$transform?source=http://ahdis.ch/ig/cda-fhir-maps/StructureMap/CdaChEmedMedicationCardDocumentToBundle
+   https://test.ahdis.ch/r4/StructureMap/$transform?source=http://fhir.ch/ig/cda-fhir-maps/StructureMap/CdaChEmedMedicationCardDocumentToBundle
    
    * Medication Prescription document:   
-   https://test.ahdis.ch/r4/StructureMap/$transform?source=http://ahdis.ch/ig/cda-fhir-maps/StructureMap/CdaChEmedMedicationPrescriptionDocumentToBundle
+   https://test.ahdis.ch/r4/StructureMap/$transform?source=http://fhir.ch/ig/cda-fhir-maps/StructureMap/CdaChEmedMedicationPrescriptionDocumentToBundle
    
    * Medication Dispense document:   
-   https://test.ahdis.ch/r4/StructureMap/$transform?source=http://ahdis.ch/ig/cda-fhir-maps/StructureMap/CdaChEmedMedicationDispenseDocumentToBundle
+   https://test.ahdis.ch/r4/StructureMap/$transform?source=http://fhir.ch/ig/cda-fhir-maps/StructureMap/CdaChEmedMedicationDispenseDocumentToBundle
    
    * Swiss EPR document:   
-   https://test.ahdis.ch/r4/StructureMap/$transform?source=http://ahdis.ch/ig/cda-fhir-maps/StructureMap/CdaChToBundle
+   https://test.ahdis.ch/r4/StructureMap/$transform?source=http://fhir.ch/ig/cda-fhir-maps/StructureMap/CdaChToBundle
    
    
 * FHIR to CDA
 
    * Medication Card document:   
-   https://test.ahdis.ch/r4/StructureMap/$transform?source=http://ahdis.ch/ig/cda-fhir-maps/StructureMap/BundleToCdaChEmedMedicationCardDocument
+   https://test.ahdis.ch/r4/StructureMap/$transform?source=http://fhir.ch/ig/cda-fhir-maps/StructureMap/BundleToCdaChEmedMedicationCardDocument
    
    * Medication Prescription document:   
-   https://test.ahdis.ch/r4/StructureMap/$transform?source=http://ahdis.ch/ig/cda-fhir-maps/StructureMap/BundleToCdaChEmedMedicationPrescriptionDocument
+   https://test.ahdis.ch/r4/StructureMap/$transform?source=http://fhir.ch/ig/cda-fhir-maps/StructureMap/BundleToCdaChEmedMedicationPrescriptionDocument
    
    * Medication Dispense document:   
-   https://test.ahdis.ch/r4/StructureMap/$transform?source=http://ahdis.ch/ig/cda-fhir-maps/StructureMap/BundleToCdaChEmedMedicationDispenseDocument
+   https://test.ahdis.ch/r4/StructureMap/$transform?source=http://fhir.ch/ig/cda-fhir-maps/StructureMap/BundleToCdaChEmedMedicationDispenseDocument
    
    * Swiss EPR document:   
-   https://test.ahdis.ch/r4/StructureMap/$transform?source=http://ahdis.ch/ig/cda-fhir-maps/StructureMap/BundleToCdaCh
+   https://test.ahdis.ch/r4/StructureMap/$transform?source=http://fhir.ch/ig/cda-fhir-maps/StructureMap/BundleToCdaCh
 
 
 ### Input
@@ -67,7 +67,7 @@ Make sure to set the Content-/Accept-Type to either `application/fhir+json;fhirV
 ![Headers](https://github.com/ahdis/test.ahdis.ch/blob/master/images/Transformation-Headers.png)
 
 ## Create your own maps
-To create additional own maps and perform the transformation locally, see README.md of the project [cda-fhir-maps](https://github.com/ahdis/cda-fhir-maps).
+To create additional own maps and perform the transformation locally, see README.md of the project [cda-fhir-maps](https://github.com/hl7ch/cda-fhir-maps).
 
 ## Links for further informations
 
