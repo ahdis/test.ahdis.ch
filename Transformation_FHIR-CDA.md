@@ -64,6 +64,13 @@ The transformation process is the same for both variants. The $transform operati
 ![POST request](https://github.com/ahdis/test.ahdis.ch/blob/master/images/Transformation-POST-VSCode.png)
 *Fig. 1: POST request to transform a Medication Card document from CDA to FHIR in Visual Studio Code*
 
+```
+POST https://test.ahdis.ch/r4/StructureMap/$transform?source=http://fhir.ch/ig/cda-fhir-maps/StructureMap/CdaChEmedMedicationCardDocumentToBundle
+Accept: application/fhir+xml;fhirVersion=4.0
+Content-Type: application/fhir+xml;fhirVersion=4.0
+
+< ./input/cda-ch-emed/2-7-MedicationCard.xml
+```
 
 ### Transformation with Postman
 

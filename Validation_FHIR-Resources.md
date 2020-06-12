@@ -1,4 +1,4 @@
-# Validation of FHIR resources
+# Validation of FHIR resources as a service
 
 The validation of FHIR resources is offered as a micro service. The basis of this service are a hapi fhir spring boot server ([matchbox](https://github.com/ahdis/matchbox)) supporting the [$validate operation on Resources](https://www.hl7.org/fhir/resource-operation-validate.html) and the definded profiles of the [Swiss implementation guides](http://fhir.ch/).
 This manual describes which FHIR implementation guides are supported and how the serive can be used. 
@@ -15,29 +15,46 @@ This micro service supports validation against all profiles (SturctureDefinition
 
 ## Running validation
 
-The $validate operation checks whether the content of a resource would be acceptable. The validation can be performed generally (FHIR Core specification) or against a defined profile.
+Two possibilities are shown here, how the validation can be executed:
+1. [Validation with Visual Studio Code and a REST Client Extension](#validation-with-visual-studio-code-and-a-rest-client-extension)
+2. [Validation with Postman](#validation-with-postman)
 
-* The matchbox (https://test.ahdis.ch/r4) provides a system wide **$validate** operation (with profile as query parameter)
-* If desired apply a **profile** to validate against
+The validation process is the same for both variants. The $validate operation checks whether the content of a resource would be acceptable. The validation can be performed generally (FHIR Core specification) or against a defined profile.
+
+* The matchbox (https://test.ahdis.ch/r4) provides the above mentioned implementation guides and supports a system wide **$validate** operation (with profile as query parameter)
+* If desired apply a **profile** to validate against (see [POST requests](#post-requests))
 * Choose your FHIR **resource** (xml/json)
 * Get a response on a validation operation ([Operation Outcome](https://www.hl7.org/fhir/operationoutcome.html)) to provide **information about the outcome** (error, warning and information messages)
 
-## POST requests
+### POST requests
 
 * Validate a resource with no profile:   
-   http://test.ahdis.ch/r4/$validate HTTP/1.1
+   https://test.ahdis.ch/r4/$validate
 
 * Validate a resource with a profile (e.g. CH Core Patient):
-   http://test.ahdis.ch/r4/$validate?profile=http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient HTTP/1.1
+   https://test.ahdis.ch/r4/$validate?profile=http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient
 
 
-### Resource to validate
-The POST request has the content to validate as the resource body.
+### Validation with Visual Studio Code and a REST Client Extension
+![POST request](https://github.com/ahdis/test.ahdis.ch/blob/master/images/Validation-noProfile-VSCode.png)
+*Fig. 1: POST request to validate a resource in Visual Studio Code*
 
-![POST request]()
+![POST request](https://github.com/ahdis/test.ahdis.ch/blob/master/images/Validation-Profile-VSCode.png)
+*Fig. 2: POST request to validate a resource against the profile "CH Core Patient" in Visual Studio Code*
 
-### File format (xml/json)
+### Validation with Postman
+
+#### Resource
+The POST request has the resource to validate in the body.
+
+![POST request](https://github.com/ahdis/test.ahdis.ch/blob/master/images/Validation-noProfile.png)
+*Fig. 3: POST request to validate a resource in Postman*
+
+![POST request](https://github.com/ahdis/test.ahdis.ch/blob/master/images/Validation-Profile.png)
+*Fig. 4: POST request to validate a resource against the profile "CH Core Patient" in Postman*
+
+#### File format (xml/json)
 Make sure to set the Content-/Accept-Type to either `application/fhir+json;fhirVersion=4.0` or `application/fhir+json;fhirVersion=4.0` accordingly.
 
 ![Headers](https://github.com/ahdis/test.ahdis.ch/blob/master/images/Transformation-Headers.png)
-
+*Fig. 5: Set Headers in Postman*
