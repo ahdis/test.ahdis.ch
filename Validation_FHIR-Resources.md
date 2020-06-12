@@ -31,7 +31,7 @@ The validation process is the same for both variants. The $validate operation ch
 * Validate a resource with no profile:   
    https://test.ahdis.ch/r4/$validate
 
-* Validate a resource with a profile (e.g. CH Core Patient):
+* Validate a resource with a profile (e.g. CH Core Patient):   
    https://test.ahdis.ch/r4/$validate?profile=http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient
 
 
@@ -39,8 +39,32 @@ The validation process is the same for both variants. The $validate operation ch
 ![POST request](https://github.com/ahdis/test.ahdis.ch/blob/master/images/Validation-noProfile-VSCode.png)
 *Fig. 1: POST request to validate a resource in Visual Studio Code*
 
+```
+POST https://test.ahdis.ch/r4/$validate HTTP/1.1
+Content-Type: application/xml
+
+<Patient xmlns="http://hl7.org/fhir">
+  <id value="MaxMuster"/>
+  .
+  .
+  .
+</Patient>
+```
+
 ![POST request](https://github.com/ahdis/test.ahdis.ch/blob/master/images/Validation-Profile-VSCode.png)
 *Fig. 2: POST request to validate a resource against the profile "CH Core Patient" in Visual Studio Code*
+
+```
+POST https://test.ahdis.ch/r4/$validate?profile=http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient HTTP/1.1
+Content-Type: application/xml
+
+<Patient xmlns="http://hl7.org/fhir">
+  <id value="MaxMuster"/>
+  .
+  .
+  .
+</Patient>
+```
 
 ### Validation with Postman
 

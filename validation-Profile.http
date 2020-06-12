@@ -1,6 +1,5 @@
 ### Validate a resource with a profile (e.g. CH Core Patient)
-POST https://test.ahdis.ch/r4/$validate?profile=
-     http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient HTTP/1.1
+POST https://test.ahdis.ch/r4/$validate?profile=http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient HTTP/1.1
 Content-Type: application/xml
 
 
