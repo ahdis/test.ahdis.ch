@@ -1,16 +1,16 @@
 # Validation of FHIR resources
 
-The validationof FHIR resources is offered as a micro service. The basis of this service are a hapi fhir spring boot server ([matchbox](https://github.com/ahdis/matchbox)) supporting the [$validate operation on Resources](https://www.hl7.org/fhir/resource-operation-validate.html) and the definded profiles of the [Swiss implementation guides](http://fhir.ch/).
+The validation of FHIR resources is offered as a micro service. The basis of this service are a hapi fhir spring boot server ([matchbox](https://github.com/ahdis/matchbox)) supporting the [$validate operation on Resources](https://www.hl7.org/fhir/resource-operation-validate.html) and the definded profiles of the [Swiss implementation guides](http://fhir.ch/).
 This manual describes which FHIR implementation guides are supported and how the serive can be used. 
 
 ## Supported FHIR implementation guides
 This micro service supports validation against all profiles (SturctureDefinitions) from the following FHIR implementation guides:
 
-* [CH Core (R4)](http://fhir.ch/ig/ch-core/index.html) (Core FHIR profiles for Switzerland)   
-* [CH EMED (R4)](http://fhir.ch/ig/ch-emed/index.html) (eMedication exchange format)
+* [CH Core (R4)](http://fhir.ch/ig/ch-core/index.html) (FHIR Core profiles for Switzerland, incl. in the context of EPR)   
+* [CH EMED (R4)](http://fhir.ch/ig/ch-emed/index.html) (FHIR exchange format for eMedication in Switzerland)
 * [CHMED20AF (R4)](http://chmed20af.emediplan.ch/) (FHIR based definition for the eMediplan CHMED16A)
-* [CH CRL (R4)](http://fhir.ch/ig/ch-crl/index.html) (exchange format for cancer registration)
-* [CH EMS (R4)](http://fhir.ch/ig/ch-ems/index.html) (emergency medical service protocol) 
+* [CH CRL (R4)](http://fhir.ch/ig/ch-crl/index.html) (FHIR exchange format for the cancer registration)
+* [CH EMS (R4)](http://fhir.ch/ig/ch-ems/index.html) (FHIR exchange format for the emergency medical service protocol) 
 
 
 ## Running validation
