@@ -5,21 +5,22 @@ In the following individual steps of a use case are described, which take place 
 In the following description the actors on the Documedis side and the transactions are considered. In the use case it is assumed that the patient has already opened an EPR.
 
 ![Headers](https://github.com/ahdis/test.ahdis.ch/blob/master/images/MobileAccessGateway.png)
-*Fig. 1: Mobile Access Gateway (testscope with yellow background)*
+*Fig. 1: Mobile Access Gateway*
 
-The examples for the transactions (http requests) can be tested with the following server:
+The examples for the transactions (http requests) can be tested with the following server:   
 @host = http://test.ahdis.ch/fhir
 
 
 
 ## How to get the MPI-PID of the patient
 
-**Mobile Patient Identifier Crossreference Query [ITI-83]**
+### Mobile Patient Identifier Crossreference Query [ITI-83]
+
 A mobile app (Documedis) wants to access (read or write) documents, which requires the **MPI-PID** of the patient.   
 
 The Mobile Patient Identifier Crossreference Query is used by an app in the Swiss EPR to query with the local identifier the MPI and get the corresponding MPI-PID and the EPR-SPID identifier for the patient. 
 
-**Actor:** PMIR Patient Identifier Crossreference Consumer 
+**Actor:** PMIR Patient Identifier Crossreference Consumer    
 **Role:** Queries the Patient Identifier Crossreference Manager for the MPI-PID and EPR-SPID.
 
 **Message Example**:   
@@ -34,13 +35,13 @@ Content-Type: application/fhir+json
 
 ## How to write a document
 
-**MHD: Provide Document Bundle [ITI-65]**
+### MHD: Provide Document Bundle [ITI-65]
 
 This method is invoked when the Document Source (Documedis) needs to **submit one or more documents** to a Document Recipient (Mobile Access Gateway).
 
 In the Swiss EPR the transaction is used by the MHD Document Source to store documents in the EPR. 
 
-**Actor:** MHD Document Source
+**Actor:** MHD Document Source   
 **Role:** Sends documents and metadata to the Document Recipient
 
 **Message Example**:   
@@ -57,7 +58,7 @@ Content-Type: application/fhir+json
 
 ## How to find a document
 
-**MHD: Find Document Manifests [ITI-66]**
+### MHD: Find Document Manifests [ITI-66]
 
 **Actor:** MHD Document Consumer
 
@@ -69,7 +70,7 @@ Accept: application/fhir+json
 Content-Type: application/fhir+json
 ```
 
-**MHD: Find Document References [ITI-67]**
+### MHD: Find Document References [ITI-67]
 
 **Actor:** MHD Document Consumer
 
@@ -91,7 +92,7 @@ Content-Type: application/fhir+json
 
 ## How to retrieve a document
 
-**MHD: Retrieve Document [ITI-68]**
+### MHD: Retrieve Document [ITI-68]
 
 **Actor:** MHD Document Consumer
 
