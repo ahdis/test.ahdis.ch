@@ -14,10 +14,10 @@ In the following description the actors on the Documedis side and the transactio
 
 
 ## Use Case 1: How to write the Medication Card document into the EPR
-Use Case 1 shows how Documedis writes a Medication Card document (CHMED20AF) as an FHIR document in JSON format, in the EPR as a CDA document. The following substeps are needed for this:
+Use case 1 shows how Documedis writes a Medication Card document (CHMED20AF) as an FHIR document in JSON format, in the EPR as a CDA document. The following substeps are needed for this:
 
-1.1 Transform the FHIR document into the CDA document   
-1.2 Write the Medication Card document in the patient's EPR   
+   1.1 Transform the FHIR document into the CDA document   
+   1.2 Write the Medication Card document in the patient's EPR   
 
 ### 1.1 Transform the FHIR document into the CDA document
 
@@ -57,10 +57,10 @@ Content-Type: application/fhir+json
 ```
 
 ## Use Case 2: How to retrieve eMedication documents from the EPR
-Use Case 2 shows how Documedis retrieves eMedication documents as CDA documents from the EPR. If the retrieved document is a Medication Card document, it will be shown, how the CDA document is transformed to a FHIR document (CHMED20AF). The following substeps are needed for this:
+Use case 2 shows how Documedis retrieves eMedication documents as CDA documents from the EPR. If the retrieved document is a Medication Card document, it will be shown, how the CDA document is transformed to a FHIR document (CHMED20AF). The following substeps are needed for this:
 
-2.1 Retrieve the eMedication documents from the EPR   
-2.2 Transform the CDA document into the FHIR document   
+   2.1 Retrieve the eMedication documents from the EPR   
+   2.2 Transform the CDA document into the FHIR document   
 
 ### 2.1 Retrieve the eMedication documents from the EPR   
 
