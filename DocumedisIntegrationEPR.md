@@ -246,7 +246,7 @@ Content-Type: application/fhir+json
 
 Figure 1 shows an overview of the involved profiles, actors and transactions. On the left side the app, in this case the **Documedis** client with the respective actors, is shown and on the right side the **Mobile Access Gateway** with the respective actors is represented. The defined **transactions** are shown in the middle.   
 
-![Headers](https://github.com/ahdis/test.ahdis.ch/blob/master/images/MobileAccessGateway.png)   
+![Headers](https://github.com/ahdis/test.ahdis.ch/blob/master/images/OverviewNationalExtension.png)   
 *Fig. 1: Profiles, actors and transactions covered in the national extension and profile for mHealth*
 
 
