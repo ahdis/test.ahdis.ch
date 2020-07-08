@@ -22,6 +22,8 @@ triaPHARM calls up the EPR of a patient from the CARA community via Documedis. D
 
 #### Mobile Patient Identifier Crossreference Query [ITI-83]
 
+*Transaction [[ITI-83]](http://build.fhir.org/ig/ehealthsuisse/ch-epr-mhealth/iti-83.html) described in IG CH EPR mHealth.*
+
 To get access for Documedis for reading documents, the MPI-PID of the patient is required.    
 The transaction **Mobile Patient Identifier Crossreference Query [ITI-83]** is used by Documedis as **Patient Identifier Crossreference Consumer** to query with the local identifier the MPI and get the corresponding MPI-PID and the EPR-SPID identifier for the patient.
 
@@ -66,6 +68,8 @@ ITI-83 PIXm Response:
 See example above [here](http://build.fhir.org/ig/ehealthsuisse/ch-epr-mhealth/Parameters-ParametersPmirCrossreferenceQuery.json.html).
 
 #### MHD: Find Document References [ITI-67]
+
+*Transaction [[ITI-67]](http://build.fhir.org/ig/ehealthsuisse/ch-epr-mhealth/iti-67.html) described in IG CH EPR mHealth.*
 
 The transaction **MHD: Find Document References [ITI-67]** is used by Documedis as **MHD Document Consumer** to find documents which are stored in the EPR of the patient.
 
@@ -133,6 +137,8 @@ See full example of [DocumentReference](http://build.fhir.org/ig/ehealthsuisse/c
 
 #### MHD: Retrieve Document [ITI-68]
 
+*Transaction [[ITI-68]](http://build.fhir.org/ig/ehealthsuisse/ch-epr-mhealth/iti-68.html) described in IG CH EPR mHealth.*
+
 The transaction **MHD: Retrieve Document [ITI-68]** is used by Documedis as **MHD Document Consumer** to retrieve documents which are stored in the EPR of the patient.
 
 ITI-68 Retrieve Document Request:   
@@ -189,6 +195,8 @@ Content-Type: application/fhir+json;fhirVersion=4.0
 
 #### Mobile Patient Identifier Crossreference Query [ITI-83]
 
+*Transaction [[ITI-83]](http://build.fhir.org/ig/ehealthsuisse/ch-epr-mhealth/iti-83.html) described in IG CH EPR mHealth.*
+
 To get access for Documedis for writing documents, the MPI-PID of the patient is required.   
 The transaction **Mobile Patient Identifier Crossreference Query [ITI-83]** is used by Documedis as **Patient Identifier Crossreference Consumer** to query with the local identifier the MPI and get the corresponding MPI-PID and the EPR-SPID identifier for the patient.
 
@@ -234,6 +242,8 @@ See example above [here](http://build.fhir.org/ig/ehealthsuisse/ch-epr-mhealth/P
 
 #### MHD: Provide Document Bundle [ITI-65]
 
+*Transaction [[ITI-65]](http://build.fhir.org/ig/ehealthsuisse/ch-epr-mhealth/iti-65.html) described in IG CH EPR mHealth.*
+
 The transaction **MHD: Provide Document Bundle [ITI-65]** is used by Documedis as **MHD Document Source** to submit one (or more) documents to the Mobile Access Gateway and thus store the document in the EPR.
 
 ITI-65 Provide Document Bundle Request:   
@@ -249,6 +259,8 @@ Content-Type: application/fhir+json
 
 
 ## Overview
+
+*See also [IG CH EPR mHealth](http://build.fhir.org/ig/ehealthsuisse/ch-epr-mhealth/index.html).*
 
 Figure 1 shows an overview of the involved profiles, actors and transactions. On the left side the app, in this case the **Documedis** client with the respective actors, is shown and on the right side the **Mobile Access Gateway** with the respective actors is represented. The defined **transactions** are shown in the middle.   
 
