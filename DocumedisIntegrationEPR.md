@@ -63,6 +63,8 @@ ITI-83 PIXm Response:
 }
 ```
 
+See example above [here](http://build.fhir.org/ig/ehealthsuisse/ch-epr-mhealth/Parameters-ParametersPmirCrossreferenceQuery.json.html).
+
 #### MHD: Find Document References [ITI-67]
 
 The transaction **MHD: Find Document References [ITI-67]** is used by Documedis as **MHD Document Consumer** to find documents which are stored in the EPR of the patient.
@@ -100,6 +102,7 @@ ITI-67 Find Document References PMP Response:
         "id": "999",
         .
         .
+        .
         "content" : [
           {
             "attachment" : {
@@ -119,11 +122,14 @@ ITI-67 Find Document References PMP Response:
         ],
         .
         .
+        .
       }
     }
   ]   
 }
 ```
+
+See full example of [DocumentReference](http://build.fhir.org/ig/ehealthsuisse/ch-epr-mhealth/DocumentReference-2-7-DocRefMedicationCard.json.html).
 
 #### MHD: Retrieve Document [ITI-68]
 
@@ -137,8 +143,6 @@ Accept: application/fhir+json
 
 - The URL for the GET Request can be found in the Response of the transaction 'MHD: Find Document References [ITI-67]' in the element DocumentReference.content.attachment.url.
 
-ITI-68 Retrieve Document Response:   
-- see [Example of DocumentReference for a Medication Card document](http://build.fhir.org/ig/ehealthsuisse/ch-epr-mhealth/DocumentReference-2-7-DocRefMedicationCard.json.html)
 
 ### 1.5: Documedis converts CDA-CH-EMED documents into FHIR-CH-EMED documents
 
@@ -225,6 +229,8 @@ ITI-83 PIXm Response:
   ]
 }
 ```
+
+See example above [here](http://build.fhir.org/ig/ehealthsuisse/ch-epr-mhealth/Parameters-ParametersPmirCrossreferenceQuery.json.html).
 
 #### MHD: Provide Document Bundle [ITI-65]
 
