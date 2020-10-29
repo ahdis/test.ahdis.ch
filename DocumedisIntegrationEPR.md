@@ -65,7 +65,7 @@ ITI-83 PIXm Response:
 }
 ```
 
-See example above [here](http://build.fhir.org/ig/ehealthsuisse/ch-epr-mhealth/Parameters-ParametersPmirCrossreferenceQuery.json.html).
+See example above [here](http://build.fhir.org/ig/ehealthsuisse/ch-epr-mhealth/Parameters-ParametersPmirOutput.json.html).
 
 #### MHD: Find Document References [ITI-67]
 
@@ -238,7 +238,7 @@ ITI-83 PIXm Response:
 }
 ```
 
-See example above [here](http://build.fhir.org/ig/ehealthsuisse/ch-epr-mhealth/Parameters-ParametersPmirCrossreferenceQuery.json.html).
+See example above [here](http://build.fhir.org/ig/ehealthsuisse/ch-epr-mhealth/Parameters-ParametersPmirOutput.json.html).
 
 #### MHD: Provide Document Bundle [ITI-65]
 
