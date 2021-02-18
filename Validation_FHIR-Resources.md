@@ -9,6 +9,7 @@ This micro service supports validation against all profiles (SturctureDefinition
 * [CH Core (R4)](http://fhir.ch/ig/ch-core/index.html) (FHIR Core profiles for Switzerland, incl. in the context of EPR)   
 * [CH EMED (R4)](http://fhir.ch/ig/ch-emed/index.html) (FHIR exchange format for eMedication in Switzerland)
 * [CHMED20AF (R4)](http://chmed20af.emediplan.ch/) (FHIR based definition for the eMediplan CHMED16A)
+* [CH VACD (R4)](http://fhir.ch/ig/ch-vacd/index.html) (FHIR exchange format for immunization and vaccination information)
 * [CH CRL (R4)](http://fhir.ch/ig/ch-crl/index.html) (FHIR exchange format for the cancer registration)
 * [CH EMS (R4)](http://fhir.ch/ig/ch-ems/index.html) (FHIR exchange format for the emergency medical service protocol) 
 
