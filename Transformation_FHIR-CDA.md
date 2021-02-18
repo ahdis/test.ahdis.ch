@@ -11,6 +11,9 @@ The transformation of following document types are supported:
 * Medication Card document
 * Medication Prescription document
 * Medication Dispense document
+* Medication List document
+* Pharmaceutical Advice document
+* Medication Treatment Plan document
 * Swiss EPR document 
 
 *Note: The scope is based on the eMedication case study; there is as yet no final mapping of data types, templates and documents.*
@@ -41,6 +44,15 @@ The transformation process is the same for both variants. The $transform operati
    * Medication Dispense document:   
    https://test.ahdis.ch/r4/StructureMap/$transform?source=http://fhir.ch/ig/cda-fhir-maps/StructureMap/CdaChEmedMedicationDispenseDocumentToBundle
    
+   * Medication List document:   
+   https://test.ahdis.ch/r4/StructureMap/$transform?source=http://fhir.ch/ig/cda-fhir-maps/StructureMap/CdaChEmedMedicationListDocumentToBundle
+   
+   * Pharmaceutical Advice document:   
+   https://test.ahdis.ch/r4/StructureMap/$transform?source=http://fhir.ch/ig/cda-fhir-maps/StructureMap/CdaChEmedPharmaceuticalAdviceDocumentToBundle
+   
+   * Medication Treatment Plan document:   
+   https://test.ahdis.ch/r4/StructureMap/$transform?source=http://fhir.ch/ig/cda-fhir-maps/StructureMap/CdaChEmedMedicationTreatmentPlanDocumentToBundle
+   
    * Swiss EPR document:   
    https://test.ahdis.ch/r4/StructureMap/$transform?source=http://fhir.ch/ig/cda-fhir-maps/StructureMap/CdaChToBundle
    
@@ -55,6 +67,14 @@ The transformation process is the same for both variants. The $transform operati
    
    * Medication Dispense document:   
    https://test.ahdis.ch/r4/StructureMap/$transform?source=http://fhir.ch/ig/cda-fhir-maps/StructureMap/BundleToCdaChEmedMedicationDispenseDocument
+   
+   * Medication List document (no transformation from FHIR to CDA)
+
+   * Pharmaceutical Advice document:   
+   https://test.ahdis.ch/r4/StructureMap/$transform?source=http://fhir.ch/ig/cda-fhir-maps/StructureMap/BundleToCdaChEmedPharmaceuticalAdviceDocument
+
+   * Medication Treatment Plan document:   
+   https://test.ahdis.ch/r4/StructureMap/$transform?source=http://fhir.ch/ig/cda-fhir-maps/StructureMap/BundleToCdaChEmedMedicationTreatmentPlanDocument
    
    * Swiss EPR document:   
    https://test.ahdis.ch/r4/StructureMap/$transform?source=http://fhir.ch/ig/cda-fhir-maps/StructureMap/BundleToCdaCh
