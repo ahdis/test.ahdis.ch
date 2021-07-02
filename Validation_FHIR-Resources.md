@@ -4,7 +4,7 @@ The validation of FHIR resources is offered as a microservice. The basis of this
 This manual describes which FHIR implementation guides are supported and how the serive can be used. 
 
 ## Supported FHIR implementation guides
-This microservice supports validation against all profiles (SturctureDefinitions) from the following FHIR implementation guides:
+This microservice supports validation against all profiles (StructureDefinitions) from the following FHIR implementation guides:
 
 * [CH Core (R4)](http://fhir.ch/ig/ch-core/index.html) (FHIR Core profiles for Switzerland, incl. in the context of EPR)   
 * [CH EMED (R4)](http://fhir.ch/ig/ch-emed/index.html) (FHIR exchange format for eMedication in Switzerland)
