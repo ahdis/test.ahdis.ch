@@ -1,7 +1,7 @@
 # Validation of FHIR resources as a service
 
 The validation of FHIR resources is offered as a microservice. The basis of this service are a hapi fhir spring boot server ([matchbox](https://github.com/ahdis/matchbox)) supporting the [$validate operation on Resources](https://www.hl7.org/fhir/resource-operation-validate.html) and the defined profiles of the [Swiss implementation guides](http://fhir.ch/).
-This manual describes which FHIR implementation guides are supported and how the serive can be used. 
+This manual describes which FHIR implementation guides are supported and how the service can be used. 
 
 ## Supported FHIR implementation guides
 This microservice supports validation against all profiles (StructureDefinitions) from the following FHIR implementation guides:
